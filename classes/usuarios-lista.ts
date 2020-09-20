@@ -23,8 +23,9 @@ export class UsuariosLista {
         console.log( this.lista );
     }
 
+    //agregar usuario conectandose
     public getLista() {
-        return this.lista;
+        return this.lista.filter( usuario => usuario.nombre !== 'sin-nombre' );
     }
 
     public getUsuario( id: string ) {
